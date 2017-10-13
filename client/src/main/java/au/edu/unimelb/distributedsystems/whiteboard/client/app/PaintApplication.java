@@ -120,7 +120,7 @@ public class PaintApplication extends JFrame
             drawPanel.elements.clear();
             while(true)
             {
-                drawPanel.elements.add(input.readObject());
+                drawPanel.elements.add((PaintElement) input.readObject());
             }
         }
         catch (IOException exception)

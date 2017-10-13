@@ -22,7 +22,7 @@ public class DrawPanel extends JPanel implements Runnable, KeyListener
 {
     public int frameCount; 
     
-    public ArrayList elements;
+    public ArrayList<PaintElement> elements;
     
     protected Boolean   mousePressed;
     protected boolean mouseClicked; 
@@ -49,7 +49,7 @@ public class DrawPanel extends JPanel implements Runnable, KeyListener
         
         addMouseListener(handler);
         
-        elements = new ArrayList();
+        elements = new ArrayList<>();
         elements.add(new FillerElement(getBackground()));
         mousePressed = false;
         
